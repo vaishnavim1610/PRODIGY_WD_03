@@ -36,8 +36,7 @@ nav ul {
 }
 .text-box .container {
   /* background-color: aquamarine; */
-  display: flex;
-  flex-direction: row;
+  display: inline-block;
   justify-items: center;
 }
 .text-box .container .row .col-md-6 {
@@ -47,12 +46,15 @@ nav ul {
   align-items: center;
   justify-items: center;
 }
+.text-box .container .row .turn {
+  font-size: 1.5vw;
+}
 .btn1 {
   background-color: #094fd2;
   height: 40px;
-  width: 80px;
+  width: 8vw;
   border-radius: 4px;
-  font-size: 1.5vw;
+  font-size: 1.1vw;
 }
 .game-container {
   height: 100vh;
@@ -75,9 +77,9 @@ nav ul {
   align-items: center;
 }
 .box:hover {
-  background-color: rgb(230, 224, 239);
+  background-color: rgb(120, 38, 243);
 }
-.text {
+.boxtext {
   text-align: center;
 }
 .bt-0 {
