@@ -55,6 +55,7 @@ nav ul {
   width: 8vw;
   border-radius: 4px;
   font-size: 1.1vw;
+  margin-left: 1vw;
 }
 .game-container {
   height: 100vh;
@@ -77,7 +78,7 @@ nav ul {
   align-items: center;
 }
 .box:hover {
-  background-color: rgb(120, 38, 243);
+  background-color: rgb(200, 174, 238);
 }
 .boxtext {
   text-align: center;
@@ -94,18 +95,23 @@ nav ul {
 .bb-0 {
   border-bottom: 0;
 }
-@media (max-width: 1025px) {
+@media (max-width: 1056px) {
   nav {
     width: 100%;
   }
   nav ul {
-    font-size: 7vw;
+    font-size: 4vw;
   }
   .text-box h1 {
-    font-size: 6vw;
+    font-size: 3vw;
+  }
+  .text-box .container .row .turn {
+    font-size: 2.5vw;
+  }
+  .btn1 {
+    font-size: 1.5vw;
   }
   .container {
-    /* height: 100vh; */
     display: grid;
     grid-template-columns: repeat(3, 25vw);
     grid-template-rows: repeat(3, 25vw);
@@ -115,23 +121,93 @@ nav ul {
     width: 100vw;
     display: flex;
     align-items: center;
-    /* background-color: antiquewhite; */
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 800px) {
   nav {
     width: 100%;
   }
   nav ul {
-    font-size: xx-large;
+    font-size: 4.5vw;
   }
   .text-box h1 {
-    font-size: xx-large;
+    font-size: 3.9vw;
   }
-  .container {
+  .text-box .container .row .turn {
+    font-size: 3vw;
+  }
+  .btn1 {
+    font-size: 2vw;
+  }
+  .game-container .container {
+    display: grid;
+    grid-template-columns: repeat(3, 17vw);
+    grid-template-rows: repeat(3, 17vw);
+  }
+  .game-container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 1055px) and (min-width: 801px) {
+  .game-container .container {
+    display: grid;
+    grid-template-columns: repeat(3, 14vw);
+    grid-template-rows: repeat(3, 14vw);
+  }
+}
+@media screen and(max-width: 540px) and (min-width:400px){
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    font-size: 6.5vw;
+  }
+  .text-box h1 {
+    font-size: 5.6vw;
+  }
+  .text-box .container .row .turn {
+    font-size: 5vw;
+  }
+  .btn1 {
+    width: 17vw;
+    font-size: 4vw;
+  }
+  .game-container .container {
     display: grid;
     grid-template-columns: repeat(3, 20vw);
     grid-template-rows: repeat(3, 20vw);
+  }
+  .game-container {
+    height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 401px) {
+  nav {
+    width: 100%;
+  }
+  nav ul {
+    font-size: 10vw;
+  }
+  .text-box h1 {
+    font-size: 9vw;
+  }
+  .text-box .container .row .turn {
+    font-size: 6vw;
+  }
+  .btn1 {
+    width: 19vw;
+    font-size: 5vw;
+  }
+  .game-container .container {
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 25vw);
   }
   .game-container {
     height: 80vh;

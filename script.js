@@ -2,6 +2,7 @@ console.log("Welcome to the game");
 
 let turn = "X";
 let audioTurn = new Audio("sounds/clicked.mp3");
+let gameOver = false;
 
 function changeTurn() {
   if (turn === "X") {
@@ -10,8 +11,31 @@ function changeTurn() {
     return "X";
   }
 }
-
-function checkWin() {}
+//function to check win
+let checkWin = () => {
+  let boxtext = document.getElementsByClassName("boxtext");
+  let win = [
+    [0, 1, 2],
+    [3, 4, 5],
+    [6, 7, 8],
+    [0, 3, 6],
+    [1, 4, 7],
+    [2, 5, 8],
+    [0, 4, 8],
+    [2, 4, 6],
+  ];
+  win.forEach((e) => {
+    if (
+      boxtext[e[0]].innerText === boxtext[e[1]].innerText &&
+      boxtext[e[1]].innerText === boxtext[e[2]].innerText &&
+      boxtext[e[0]].innerText !== ""
+    ) {
+      document.querySelector(".turn").innerText =
+        boxtext[e[0]].innerText + " Won 🎉";
+      gameOver = true;
+    }
+  });
+};
 
 //Main Game
 
@@ -24,8 +48,20 @@ Array.from(boxes).forEach((element) => {
       boxtext.innerText = turn;
       turn = changeTurn();
       checkWin();
-      // audioTurn.play();
-      document.getElementsByClassName("turn")[0].innerText = "Turn for " + turn;
+      if (!gameOver) {
+        document.getElementsByClassName("turn")[0].innerText =
+          "Turn for " + turn;
+      }
     }
   });
+});
+
+reset.addEventListener("click", () => {
+  let boxtexts = document.querySelectorAll(".boxtext");
+  Array.from(boxtexts).forEach((element) => {
+    element.innerText = "";
+  });
+  turn = "X";
+  gameOver = false;
+  document.getElementsByClassName("turn")[0].innerText = "Turn for " + turn;
 });
