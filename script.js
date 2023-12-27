@@ -30,8 +30,9 @@ let checkWin = () => {
       boxtext[e[1]].innerText === boxtext[e[2]].innerText &&
       boxtext[e[0]].innerText !== ""
     ) {
-      document.querySelector(".turn").innerText =
-        boxtext[e[0]].innerText + " Won 🎉";
+      document.querySelector("h1").innerText =
+        "🎉" + boxtext[e[0]].innerText + " Won 🎉";
+      document.querySelector(".turn").innerText = "";
       gameOver = true;
     }
   });
@@ -44,6 +45,7 @@ let boxes = document.getElementsByClassName("box");
 Array.from(boxes).forEach((element) => {
   let boxtext = element.querySelector(".boxtext");
   element.addEventListener("click", () => {
+    document.querySelector("h1").innerText = "";
     if (boxtext.innerText === "") {
       boxtext.innerText = turn;
       turn = changeTurn();
@@ -64,4 +66,6 @@ reset.addEventListener("click", () => {
   turn = "X";
   gameOver = false;
   document.getElementsByClassName("turn")[0].innerText = "Turn for " + turn;
+  document.querySelector("h1").innerText =
+    "Let's play again😉";
 });
