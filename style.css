@@ -4,7 +4,8 @@
 }
 
 nav {
-  background-color: #094fd2;
+  background-color: #bb4e0b;
+  /* #ff9aa2 */
   height: 10vh;
   display: flex;
   align-items: center;
@@ -13,11 +14,15 @@ nav {
   color: white;
   text-decoration: underline;
 }
+nav li {
+  font-size: 4vw;
+}
 nav ul {
   list-style-type: none;
 }
 .text-box {
-  background-color: #8ac6f7;
+  background-color: #faa943;
+  /* #ffb7b2 */
   height: 15vh;
   width: 100%;
   display: grid;
@@ -28,7 +33,6 @@ nav ul {
 }
 .text-box h1 {
   font-size: 2vw;
-  color: white;
 }
 .text-box p {
   font-size: 2vw;
@@ -50,9 +54,10 @@ nav ul {
   font-size: 1.5vw;
 }
 .btn1 {
-  background-color: #094fd2;
+  background-color: wheat;
   height: 40px;
   width: 8vw;
+  border: none;
   border-radius: 4px;
   font-size: 1.1vw;
   margin-left: 1vw;
@@ -61,7 +66,8 @@ nav ul {
   height: 75vh;
   display: flex;
   justify-content: center;
-  background-color: #4eaed9;
+  background-color: #e0d2b2;
+  /* ffdac1 */
 }
 .game-container .container {
   padding: 1vw;
@@ -78,22 +84,26 @@ nav ul {
   align-items: center;
 }
 .box:hover {
-  background-color: rgb(200, 174, 238);
+  background-color: rgb(240, 183, 105);
 }
 .boxtext {
   text-align: center;
 }
 .bt-0 {
   border-top: 0;
+  border-color: #e0d2b2;
 }
 .br-0 {
   border-right: 0;
+  border-color: #e0d2b2;
 }
 .bl-0 {
   border-left: 0;
+  border-color: #e0d2b2;
 }
 .bb-0 {
   border-bottom: 0;
+  border-color: #e0d2b2;
 }
 .add {
   background-color: red;
