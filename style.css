@@ -12,7 +12,8 @@ nav {
   justify-content: center;
   font-size: 2vw;
   color: white;
-  text-decoration: underline;
+  font-family: "Courier New", Courier, monospace;
+  /* text-decoration: underline; */
 }
 nav li {
   font-size: 4vw;
@@ -63,17 +64,31 @@ nav ul {
   margin-left: 1vw;
 }
 .game-container {
+  padding-left: 12vw;
   height: 75vh;
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  flex-direction: row;
   background-color: #e0d2b2;
   /* ffdac1 */
+}
+.game-container .gif img {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px black;
+  padding-top: 10%;
+  visibility: hidden;
 }
 .game-container .container {
   padding: 1vw;
   display: grid;
   grid-template-columns: repeat(3, 10vw);
   grid-template-rows: repeat(3, 10vw);
+  padding-top: 5%;
+  /* position: fixed; */
 }
 .box {
   border: 2px solid black;
@@ -141,7 +156,7 @@ nav ul {
   nav {
     width: 100%;
   }
-  nav ul {
+  nav li {
     font-size: 4vw;
   }
   .text-box h1 {
@@ -170,7 +185,7 @@ nav ul {
   nav {
     width: 100%;
   }
-  nav ul {
+  nav li {
     font-size: 4.5vw;
   }
   .text-box h1 {
@@ -205,7 +220,7 @@ nav ul {
   nav {
     width: 100%;
   }
-  nav ul {
+  nav li {
     font-size: 6.5vw;
   }
   .text-box h1 {
@@ -230,15 +245,15 @@ nav ul {
     align-items: center;
   }
 }
-@media (max-width: 401px) {
+@media (max-width: 520px) {
   nav {
     width: 100%;
   }
-  nav ul {
-    font-size: 10vw;
+  nav li {
+    font-size: 9vw;
   }
   .text-box h1 {
-    font-size: 9vw;
+    font-size: 4vw;
   }
   .text-box .container .row .turn {
     font-size: 6vw;
@@ -254,6 +269,35 @@ nav ul {
   }
   .game-container {
     height: 80vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+  }
+}
+@media (max-width: 195px) {
+  nav {
+    width: 100%;
+  }
+  nav li {
+    font-size: 13vw;
+  }
+  .text-box h1 {
+    font-size: 5.5vw;
+  }
+  .text-box .container .row .turn {
+    font-size: 8vw;
+  }
+  .btn1 {
+    width: 26vw;
+    font-size: 7vw;
+  }
+  .game-container .container {
+    display: grid;
+    grid-template-columns: repeat(3, 25vw);
+    grid-template-rows: repeat(3, 25vw);
+  }
+  .game-container {
+    height: 40vh;
     width: 100vw;
     display: flex;
     align-items: center;
