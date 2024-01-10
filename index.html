@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tic--Tac--Toe</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav>
+      <ul>
+        <li>TIC--TAC--TOE</li>
+      </ul>
+    </nav>
+    <div class="text-box">
+      <h1>⭕✖️⭕ Welcome to the game ⭕✖️⭕</h1>
+      <div class="container">
+        <div class="row">
+          <div class="turn col-md-6">Turn For X</div>
+          <div class="col-md-6">
+            <button class="btn1" id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="game-container">
+      <div class="gif">
+        <img src="gif/excited.gif" class="img2" alt="" />
+      </div>
+      <div class="container">
+        <div class="box bt-0 bl-0" id="myDiv" style="background-color: #ff7f51">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box bt-0" id="myDiv"><span class="boxtext"></span></div>
+        <div class="box bt-0 br-0" id="myDiv" style="background-color: #ff7f51">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box bl-0" id="myDiv"><span class="boxtext"></span></div>
+        <div
+          class="box bt-0 br-0 bb-0 bl-0"
+          id="myDiv"
+          style="background-color: #ff7f51"
+        >
+          <span class="boxtext"></span>
+        </div>
+        <div class="box br-0" id="myDiv"><span class="boxtext"></span></div>
+        <div class="box bb-0 bl-0" id="myDiv" style="background-color: #ff7f51">
+          <span class="boxtext"></span>
+        </div>
+        <div class="box bb-0" id="myDiv"><span class="boxtext"></span></div>
+        <div class="box bb-0 br-0" id="myDiv" style="background-color: #ff7f51">
+          <span class="boxtext"></span>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="add"></div> -->
+    <script src="script.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.js"
+      integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
