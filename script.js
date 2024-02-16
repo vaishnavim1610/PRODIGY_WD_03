@@ -70,7 +70,7 @@ reset.addEventListener("click", () => {
   turn = "✖️";
   gameOver = false;
   document.getElementsByClassName("turn")[0].innerText = "Turn for " + turn;
-  document.querySelector("h1").innerText = "Let's play again😉";
+  document.querySelector("h1").innerText = "Let's play again🎉";
   document
     .querySelector(".gif")
     .getElementsByTagName("img")[0].style.visibility = "hidden";
